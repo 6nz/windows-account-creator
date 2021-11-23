@@ -3,7 +3,7 @@ from colorama import Fore, Back, Style
 
 count = input("Thread count: ")
 
-def createaccsloop():
+def createacc():
     try:
         nums = string.digits
         new = ''.join(random.choice(nums) for i in range(5))
@@ -17,7 +17,7 @@ def createaccsloop():
 
 def thread():
     for i in range(int(count)):
-        threading.Thread(target=createaccsloop).start()
+        threading.Thread(target=createacc).start()
 
 
 def starter():
